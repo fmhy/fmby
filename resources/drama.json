@@ -29,7 +29,12 @@
         "Scar",
         "Rim",
         "Dan",
-        "Zenith"
+        "Zenith",
+        "Kick",
+        "Kiri",
+        "Nug",
+        "Anarchydr",
+        "ManuJL"
     ],
     "servers": [
         "FMHY",
@@ -41,7 +46,8 @@
         "massgrave",
         "Rims Linux Wiki",
         "homebrew community",
-        "Vencord"
+        "Vencord",
+        "Music Hoarders"
     ],
     "bsoftware": [
         "Microsoft Edge",
@@ -52,7 +58,15 @@
         "uTorrent",
         "BitTorrent",
         "McAfee",
-        "TLauncher"
+        "TLauncher",
+        "BonziBuddy",
+        "LimeWire",
+        "CCleaner",
+        "AllPCWorld",
+        "VSTorrent",
+        "SteamUnlocked",
+        "OceanOfGames",
+        "GameFabrique"
     ],
     "phrases": [
         "%p's community splits due to %p, much to the dismay of %p.",
@@ -97,7 +111,28 @@
         "%b's owner doxxes %p.",
         "%b gets partnership with %s, which enrages %p.",
         "%p gets banned from %s for using Microsoft edge on Linux.",
-        "%p accuses $p of destroying their relationship with %p."
+        "%p accuses $p of destroying their relationship with %p.",
+        "%p says \"I got a subpoena\" and %s immediately makes it a role.",
+        "%p claims %s was created for legal reasons and now faces a subpoena.",
+        "%p declares %s immune to copyright, then gets a subpoena anyway.",
+        "%p replaces %s with a single Hello Kitty meme, then gets banned.",
+        "%p asks \"is Hello Kitty a cat?\" in %s and causes an instant ban.",
+        "%p is unbanned only after agreeing to post exactly one Hello Kitty meme.",
+        "%p tries to copyright the concept of drama, threatening to shutdown %s.",
+        "%p bans the letter itself in %s, and %p adapts anyway.",
+        "%p uninstalls %b, but it says goodbye and re-installs %p.",
+        "%p gets banned from %s for telling the truth about %b being malware.",
+        "%p warns %s that %b is a virus, then installs it anyway.",
+        "%b installs itself as the default everything on %p's machine.",
+        "%p's token gets stolen by a %b stealer, and %s withdraws their trust.",
+        "%p tries %b to \"save space\" and immediately gets ransomware.",
+        "%p logs into %s from a machine running %b. Every message is now at risk.",
+        "%p runs a suspicious installer for a \"free game\" and now %s's bored.",
+        "%p downloads %b to get free robux. The email was a lie.",
+        "%b came bundled with a cute game and refused to leave afterwards.",
+        "%p deletes all of %b but the trophy is embedded in the BIOS.",
+        "%p pleasantly accepts a %b companion app. The PC screams for help.",
+        "%b smells like a logger. %p denies it while the zip exfiltrates."
     ],
     "replacers": {
         "%s": "servers",
