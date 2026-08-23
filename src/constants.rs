@@ -1,4 +1,4 @@
-pub const FMHY_SINGLE_PAGE_ENDPOINT: &str = "https://api.fmhy.net/single-page";
+pub const FMHY_SINGLE_PAGE_ENDPOINT: &str = "https://fmhy.net/single-page.md";
 pub const AUTO_THREAD_CHANNELS: &[u64] = &[FmhyChannel::FREE_STUFF, FmhyChannel::SECRET_RESOURCES];
 
 pub struct DevChannel;
