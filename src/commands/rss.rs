@@ -53,7 +53,6 @@ async fn autocomplete_name<'a>(
 
 #[poise::command(
     slash_command,
-    install_context = "Guild",
     interaction_context = "Guild",
     subcommands("add", "remove", "rename", "list"),
     subcommand_required

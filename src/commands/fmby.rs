@@ -22,7 +22,6 @@ use crate::wiki::collect_wiki_urls;
 
 #[poise::command(
     slash_command,
-    install_context = "Guild",
     interaction_context = "Guild",
     subcommands("status", "activity", "migrate"),
     subcommand_required

@@ -44,7 +44,7 @@ fn tokenize(text: &str) -> Vec<(Token, f32)> {
 }
 
 /// Generates a wordcloud from the channel's message history
-#[poise::command(slash_command)]
+#[poise::command(slash_command, interaction_context = "Guild")]
 async fn wordcloud(
     ctx: Context<'_>,
     #[min = 1]

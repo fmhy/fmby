@@ -1,12 +1,7 @@
 use super::{Command, Context, Error};
 
 /// Post the link to the bot's source code
-#[poise::command(
-    slash_command,
-    prefix_command,
-    category = "Meta",
-    install_context = "Guild|User"
-)]
+#[poise::command(slash_command, prefix_command, category = "Meta")]
 async fn source(ctx: Context<'_>) -> Result<(), Error> {
     ctx.say(concat!("<", env!("CARGO_PKG_REPOSITORY"), ">"))
         .await?;
@@ -25,12 +20,7 @@ async fn shutdown(ctx: Context<'_>) -> Result<(), Error> {
 }
 
 /// Tells you how long the bot has been up for
-#[poise::command(
-    slash_command,
-    prefix_command,
-    category = "Meta",
-    install_context = "Guild|User"
-)]
+#[poise::command(slash_command, prefix_command, category = "Meta")]
 async fn uptime(ctx: Context<'_>) -> Result<(), Error> {
     let uptime = ctx.data().time_started.elapsed();
 
