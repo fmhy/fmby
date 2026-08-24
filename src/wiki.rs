@@ -13,6 +13,7 @@ pub async fn search_wiki(
 
     let content = reqwest::get(FMHY_SINGLE_PAGE_ENDPOINT)
         .await?
+        .error_for_status()?
         .text()
         .await?;
 

@@ -107,6 +107,7 @@ async fn migrate(
     let start = Instant::now();
     let content = reqwest::get(FMHY_SINGLE_PAGE_ENDPOINT)
         .await?
+        .error_for_status()?
         .text()
         .await?;
     let urls = collect_wiki_urls(&content)
@@ -436,6 +437,7 @@ async fn inconsistencies(ctx: Context<'_>) -> Result<(), Error> {
         .await?;
     let content = reqwest::get(FMHY_SINGLE_PAGE_ENDPOINT)
         .await?
+        .error_for_status()?
         .text()
         .await?;
 
