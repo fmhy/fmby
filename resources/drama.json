@@ -35,7 +35,7 @@
     "Nug",
     "Anarchydr",
     "ManuJL",
-    "Flower"    
+    "Flower"
   ],
   "servers": [
     "FMHY",
@@ -331,5 +331,6 @@
     "%s": "servers",
     "%p": "people",
     "%b": "bsoftware"
+    
   }
 }
