@@ -1,4 +1,4 @@
-use poise::serenity_prelude::{Context, Permissions};
+use serenity::all::{Context, Permissions};
 use thiserror::Error;
 
 #[derive(Debug, Error)]
@@ -18,7 +18,7 @@ pub enum Error {
     #[error(transparent)]
     FeedParse(#[from] feed_rs::parser::ParseFeedError),
     #[error(transparent)]
-    Serenity(#[from] poise::serenity_prelude::Error),
+    Serenity(#[from] serenity::Error),
     #[error(transparent)]
     Http(#[from] reqwest::Error),
     #[error(transparent)]

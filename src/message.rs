@@ -1,6 +1,6 @@
 use std::borrow::Cow;
 
-use poise::serenity_prelude::{Http, Message, MessageReferenceKind};
+use serenity::all::{Http, Message, MessageReferenceKind};
 
 /// Gets message content, falling back to referenced message content if the main content is empty.
 /// Returns `None` if both the message and its referenced message (if any) have empty content.

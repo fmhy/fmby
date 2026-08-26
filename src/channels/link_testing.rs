@@ -1,6 +1,6 @@
 use std::collections::HashSet;
 
-use poise::serenity_prelude::{CreateMessage, GuildThread, prelude::*};
+use serenity::all::{Context, CreateMessage, GuildThread, Mentionable};
 
 use crate::constants::FmhyChannel;
 use crate::constants::link_testing::ForumTag;

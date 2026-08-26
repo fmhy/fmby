@@ -1,6 +1,6 @@
 use poise::CreateReply;
-use poise::serenity_prelude::MessageFlags;
 use sea_orm::{ConnectionTrait, Statement};
+use serenity::all::MessageFlags;
 
 use super::{Command, Context, Error};
 

@@ -1,6 +1,6 @@
-use poise::serenity_prelude::Message;
 use sea_orm::sqlx::types::chrono::Utc;
 use sea_orm::{ActiveValue::*, IntoActiveModel, Iterable, prelude::*};
+use serenity::all::Message;
 
 use crate::constants::FmhyChannel;
 use crate::entities::enums::WikiUrlStatus;

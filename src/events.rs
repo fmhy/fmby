@@ -1,4 +1,5 @@
-use poise::serenity_prelude::{Context, EventHandler, FullEvent, async_trait};
+use async_trait::async_trait;
+use serenity::all::{Context, EventHandler, FullEvent};
 
 use crate::background_task::start_background_task;
 use crate::channels;

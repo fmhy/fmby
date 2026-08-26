@@ -1,6 +1,7 @@
 use std::time::Duration;
 
-use poise::serenity_prelude::{Context, async_trait};
+use async_trait::async_trait;
+use serenity::all::Context;
 use tokio::time::MissedTickBehavior;
 use tracing::{error, info, warn};
 

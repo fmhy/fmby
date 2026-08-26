@@ -8,6 +8,7 @@ license = "GPL-3.0-or-later"
 publish = false
 
 [dependencies]
+async-trait = "0.1"
 dotenvy = "0.15.7"
 feed-rs = "2.4.0"
 futures = "0.3.33"

@@ -4,9 +4,9 @@ use std::sync::LazyLock;
 
 use image::{ImageFormat, Rgba, RgbaImage, imageops};
 use poise::CreateReply;
-use poise::serenity_prelude::{CreateAttachment, GetMessages};
 use rand::prelude::*;
 use regex::Regex;
+use serenity::all::{CreateAttachment, GetMessages};
 use wordcloud_rs::{Token, WordCloud};
 
 use super::{Command, Context, Error};

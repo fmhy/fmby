@@ -1,9 +1,7 @@
 use itertools::Itertools;
 use poise::CreateReply;
-use poise::serenity_prelude::{
-    AutocompleteChoice, CreateAllowedMentions, CreateAutocompleteResponse,
-};
 use sea_orm::{ActiveValue::*, QueryFilter, QuerySelect, QueryTrait, prelude::*};
+use serenity::all::{AutocompleteChoice, CreateAllowedMentions, CreateAutocompleteResponse};
 use url::Url;
 
 use super::{Command, Context, Error};

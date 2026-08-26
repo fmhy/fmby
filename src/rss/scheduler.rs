@@ -1,13 +1,13 @@
 use std::sync::Arc;
 use std::time::Duration;
 
+use async_trait::async_trait;
 use futures::StreamExt;
 use futures::stream::FuturesUnordered;
-use poise::serenity_prelude::{
-    Context, CreateEmbed, CreateEmbedFooter, CreateMessage, GenericChannelId, Timestamp,
-    async_trait, futures,
-};
 use sea_orm::TryIntoModel;
+use serenity::all::{
+    Context, CreateEmbed, CreateEmbedFooter, CreateMessage, GenericChannelId, Timestamp,
+};
 
 use crate::background_task::BackgroundTask;
 use crate::entities::{rss_feed_entries, rss_feeds};

@@ -22,9 +22,9 @@ use std::sync::atomic::AtomicBool;
 use std::time::Instant;
 
 use migration::Migrator;
-use poise::serenity_prelude::{self as serenity, GatewayIntents};
 use sea_orm::{ConnectOptions, Database};
 use sea_orm_migration::MigratorTraitSelf;
+use serenity::all::{GatewayIntents, Token};
 
 #[cfg(unix)]
 async fn shutdown_signal() {
@@ -79,7 +79,7 @@ async fn main() {
 
     let framework = poise::Framework::new(options);
 
-    let token = serenity::Token::from_env("BOT_TOKEN").expect("BOT_TOKEN is not set");
+    let token = Token::from_env("BOT_TOKEN").expect("BOT_TOKEN is not set");
     let intents = GatewayIntents::MESSAGE_CONTENT
         | GatewayIntents::GUILDS
         | GatewayIntents::GUILD_MESSAGES
