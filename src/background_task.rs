@@ -2,7 +2,6 @@ use std::time::Duration;
 
 use async_trait::async_trait;
 use serenity::all::Context;
-use tokio::time::MissedTickBehavior;
 use tracing::{error, info, warn};
 
 use crate::error::Error;
@@ -51,7 +50,7 @@ where
     };
 
     let mut ticker = tokio::time::interval(task.interval());
-    ticker.set_missed_tick_behavior(MissedTickBehavior::Skip);
+    ticker.set_missed_tick_behavior(tokio::time::MissedTickBehavior::Skip);
 
     tokio::spawn(async move {
         loop {

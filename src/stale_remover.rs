@@ -1,8 +1,7 @@
 use std::time::Duration;
 
 use async_trait::async_trait;
-use sea_orm::ExprTrait;
-use sea_orm::{QueryOrder, prelude::*};
+use sea_orm::{ExprTrait, QueryOrder, prelude::*};
 use serenity::all::{Channel, Context, GenericChannelId, MessageId};
 
 use crate::background_task::BackgroundTask;
